@@ -22,7 +22,7 @@ pod "NetTool"
 
 ## Author
 
-2562249572@qq.com, 704861917@qq.com
+大青虫
 
 ## License
 
