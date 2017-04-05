@@ -16,14 +16,14 @@
 
 static AFHTTPSessionManager *_manager;
 
-+ (AFHTTPSessionManager *)tool {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        
-        _manager = [AFHTTPSessionManager manager];
-    });
-    return _manager;
-}
+//+ (AFHTTPSessionManager *)tool {
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        
+//        _manager = [AFHTTPSessionManager manager];
+//    });
+//    return _manager;
+//}
 
 + (AFHTTPSessionManager *)sharedManager {
     
