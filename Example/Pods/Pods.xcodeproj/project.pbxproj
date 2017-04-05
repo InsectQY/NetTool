@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011E006CE52E780AB191B2DD4767C9ED /* NetworkUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 19524107DEBF75225BDE423FA2A44238 /* NetworkUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		014E61D99FBF61E37D22D014F9C69EBA /* Pods-NetTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA74C8416DA06DC953F0670C6C165841 /* Pods-NetTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01F05F4A6A6D1B99F27250287CCF733B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		0D99F35B4BC68E4090C45ED3F55AAC8B /* NetTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E846BD3F463BD5DAD29A5936E88AFA /* NetTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1679E463AC4579E5B79644842BB37454 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2276B762F66B50D72F129F4A0EE0C4C3 /* Pods-NetTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9CBFAB68744FD8F23CA04A7DA3E506 /* Pods-NetTool_Tests-dummy.m */; };
+		41479AD7D182B636B85DEB2F02F1365C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D322EFF56DD67033C35A2A77ABE49AD2 /* Reachability.m */; };
+		5553E93318C3C047D67F87DBC1591CAF /* RequestTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EDF5628C0F14DBE29D104BCF607BC1F /* RequestTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5846E2DBDF5A441F78DB2FD40C65FB23 /* NetTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F99F0CC465A13B8F88C680D7992418F4 /* NetTool-dummy.m */; };
+		5FEAC8244208D16EA9DCF9EB4064243D /* Pods-NetTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4B6C07D3BFC3EEB17E0ECF6612694B /* Pods-NetTool_Example-dummy.m */; };
+		6CC27CB61755989428F58872153FD6CC /* Pods-NetTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E1E1C8D9858198F611109FCD728CADC /* Pods-NetTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D459769BC57AF1E8CDB710682D3D93D /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3DC2E1F7AA0EA5ADD046868CE8096 /* RequestTool.m */; };
+		91E3120756E2310F58B88A5A574FB780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		93FB7CA2441B0A906AA3E2CDB87F8A33 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 525AB9CBC551374041330C98EAC2759E /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8F7BD6BC50727799C97249200AC44EA /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF28FDFEFEA5A540DA8523112A95FC9 /* EGOCache.m */; };
+		F8D40AF96C3384BC206FE83AACCFE524 /* EGOCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A67460B85ED4CCA72B1A73AE610CC44 /* EGOCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB3DC06A0FC1E583CD049324EA73DCD8 /* NetworkUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 24AA3500791E3A8523DA871E6DCC276A /* NetworkUnit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E56EF7121B23423A8C1A7C7CB37C3155 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA2F209ABCFF920876FAA52455B3BB35;
+			remoteInfo = NetTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BE67328BB1E86756F5CE38F2638021 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19524107DEBF75225BDE423FA2A44238 /* NetworkUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NetworkUnit.h; sourceTree = "<group>"; };
+		1C4464D93A1CA40CCBF3057A89742EF9 /* NetTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NetTool.xcconfig; sourceTree = "<group>"; };
+		1D48BE9A477905139E3E48FFB89F2F04 /* Pods-NetTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		24AA3500791E3A8523DA871E6DCC276A /* NetworkUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NetworkUnit.m; sourceTree = "<group>"; };
+		24CF6619811201BE8AFF81AF5EBC8BF1 /* Pods-NetTool_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetTool_Tests-resources.sh"; sourceTree = "<group>"; };
+		26221050B19BBF9C13026B059FC61958 /* Pods-NetTool_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetTool_Example-resources.sh"; sourceTree = "<group>"; };
+		3CF28FDFEFEA5A540DA8523112A95FC9 /* EGOCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		4357F8D1ADCC6FF439B6DB2F70F27918 /* Pods-NetTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4C9CBFAB68744FD8F23CA04A7DA3E506 /* Pods-NetTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetTool_Tests-dummy.m"; sourceTree = "<group>"; };
+		4EDF5628C0F14DBE29D104BCF607BC1F /* RequestTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
+		525AB9CBC551374041330C98EAC2759E /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		6B5B86547529C09786FE7C9270EE7DC6 /* Pods-NetTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6BE3DC2E1F7AA0EA5ADD046868CE8096 /* RequestTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
+		78E846BD3F463BD5DAD29A5936E88AFA /* NetTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetTool-umbrella.h"; sourceTree = "<group>"; };
+		7A67460B85ED4CCA72B1A73AE610CC44 /* EGOCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		7E1E1C8D9858198F611109FCD728CADC /* Pods-NetTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetTool_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7FEE6A7FF15CBE882034CDB1B156E877 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8403642FC3605CF0E200845322A91E67 /* NetTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NetTool.framework; path = NetTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89326CFF18D8B79EAB9595684A704131 /* Pods_NetTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NetTool_Example.framework; path = "Pods-NetTool_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FE7DB7E6E59D36AF676E2A6CCC0D410 /* NetTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NetTool-prefix.pch"; sourceTree = "<group>"; };
+		904E5D6FAE7D2A377498C84AC2E99048 /* Pods-NetTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NetTool_Tests.modulemap"; sourceTree = "<group>"; };
+		90AF6038A9614DD4D53B7A21CC41A072 /* Pods-NetTool_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NetTool_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9721E65C7C5093D1D1930F2F6B99CD2A /* Pods-NetTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NetTool_Example.modulemap"; sourceTree = "<group>"; };
+		B8D9641D9E85D84487E01B1FCF85A6D4 /* Pods-NetTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C6206F1E61A55CDE846C21F6FEAB287B /* Pods-NetTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA74C8416DA06DC953F0670C6C165841 /* Pods-NetTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NetTool_Example-umbrella.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D322EFF56DD67033C35A2A77ABE49AD2 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D90428034F4D9C7235A97A414D91C816 /* Pods-NetTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NetTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		DB8FDD1B96AAC43D11228090FD3DC76B /* Pods-NetTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1FBBC46EF149BF5DD13A8094E1A800B /* Pods_NetTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NetTool_Tests.framework; path = "Pods-NetTool_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9960BC62BA42A74BDE6D9828821A1A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A8247268B4BB936DE6694DB9C5AD17 /* Pods-NetTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NetTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF4B6C07D3BFC3EEB17E0ECF6612694B /* Pods-NetTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NetTool_Example-dummy.m"; sourceTree = "<group>"; };
+		F6449A55B54BFD68E58D78C89ADE0044 /* Pods-NetTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NetTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F99F0CC465A13B8F88C680D7992418F4 /* NetTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NetTool-dummy.m"; sourceTree = "<group>"; };
+		FDFC509308C96B10B9D13F09BC7130D7 /* NetTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NetTool.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		198EFEBA65D1C422EE7FEF41DF589657 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F05F4A6A6D1B99F27250287CCF733B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33B661EF2CE99FEDE4A45A2DD4D96FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E3120756E2310F58B88A5A574FB780 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FF58FAC5072EEF22B28D2DFD8A728D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1679E463AC4579E5B79644842BB37454 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04518D2514ACC7631093B3CC98A94EFB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6EBD2A7DA591AC52D67CCC4E3FA54B2D /* NetReachability */,
+				B9EAFE1F5638B56920016D4B1CC8A87D /* RequestTool */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		38E2C8C3BE0A5634A8C93FFC213D2BC1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57A70C55B4CE6027EE3954A48D75A662 /* Pods-NetTool_Example */,
+				DDF632EEA6923A648BEFC63A9DD74E56 /* Pods-NetTool_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		57A70C55B4CE6027EE3954A48D75A662 /* Pods-NetTool_Example */ = {
+			isa = PBXGroup;
+			children = (
+				E9960BC62BA42A74BDE6D9828821A1A8 /* Info.plist */,
+				9721E65C7C5093D1D1930F2F6B99CD2A /* Pods-NetTool_Example.modulemap */,
+				F6449A55B54BFD68E58D78C89ADE0044 /* Pods-NetTool_Example-acknowledgements.markdown */,
+				D90428034F4D9C7235A97A414D91C816 /* Pods-NetTool_Example-acknowledgements.plist */,
+				EF4B6C07D3BFC3EEB17E0ECF6612694B /* Pods-NetTool_Example-dummy.m */,
+				4357F8D1ADCC6FF439B6DB2F70F27918 /* Pods-NetTool_Example-frameworks.sh */,
+				26221050B19BBF9C13026B059FC61958 /* Pods-NetTool_Example-resources.sh */,
+				CA74C8416DA06DC953F0670C6C165841 /* Pods-NetTool_Example-umbrella.h */,
+				6B5B86547529C09786FE7C9270EE7DC6 /* Pods-NetTool_Example.debug.xcconfig */,
+				1D48BE9A477905139E3E48FFB89F2F04 /* Pods-NetTool_Example.release.xcconfig */,
+			);
+			name = "Pods-NetTool_Example";
+			path = "Target Support Files/Pods-NetTool_Example";
+			sourceTree = "<group>";
+		};
+		5AA506643934681D1390850F6CE3D83D /* NetTool */ = {
+			isa = PBXGroup;
+			children = (
+				F2A8634B97DEA4A0D61A63DC3AA7198F /* NetTool */,
+				F8B446844BA168E1BF9AC5526906ACD0 /* Support Files */,
+			);
+			name = NetTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6EBD2A7DA591AC52D67CCC4E3FA54B2D /* NetReachability */ = {
+			isa = PBXGroup;
+			children = (
+				19524107DEBF75225BDE423FA2A44238 /* NetworkUnit.h */,
+				24AA3500791E3A8523DA871E6DCC276A /* NetworkUnit.m */,
+				525AB9CBC551374041330C98EAC2759E /* Reachability.h */,
+				D322EFF56DD67033C35A2A77ABE49AD2 /* Reachability.m */,
+			);
+			name = NetReachability;
+			path = NetReachability;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				AB6C4659A34870B452F315343D9BE91F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CBD93CE9CC6B322D639EBB9AFBDAE4FF /* Products */,
+				38E2C8C3BE0A5634A8C93FFC213D2BC1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB6C4659A34870B452F315343D9BE91F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AA506643934681D1390850F6CE3D83D /* NetTool */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B9EAFE1F5638B56920016D4B1CC8A87D /* RequestTool */ = {
+			isa = PBXGroup;
+			children = (
+				7A67460B85ED4CCA72B1A73AE610CC44 /* EGOCache.h */,
+				3CF28FDFEFEA5A540DA8523112A95FC9 /* EGOCache.m */,
+				4EDF5628C0F14DBE29D104BCF607BC1F /* RequestTool.h */,
+				6BE3DC2E1F7AA0EA5ADD046868CE8096 /* RequestTool.m */,
+			);
+			name = RequestTool;
+			path = RequestTool;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBD93CE9CC6B322D639EBB9AFBDAE4FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8403642FC3605CF0E200845322A91E67 /* NetTool.framework */,
+				89326CFF18D8B79EAB9595684A704131 /* Pods_NetTool_Example.framework */,
+				E1FBBC46EF149BF5DD13A8094E1A800B /* Pods_NetTool_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDF632EEA6923A648BEFC63A9DD74E56 /* Pods-NetTool_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7FEE6A7FF15CBE882034CDB1B156E877 /* Info.plist */,
+				904E5D6FAE7D2A377498C84AC2E99048 /* Pods-NetTool_Tests.modulemap */,
+				DB8FDD1B96AAC43D11228090FD3DC76B /* Pods-NetTool_Tests-acknowledgements.markdown */,
+				C6206F1E61A55CDE846C21F6FEAB287B /* Pods-NetTool_Tests-acknowledgements.plist */,
+				4C9CBFAB68744FD8F23CA04A7DA3E506 /* Pods-NetTool_Tests-dummy.m */,
+				90AF6038A9614DD4D53B7A21CC41A072 /* Pods-NetTool_Tests-frameworks.sh */,
+				24CF6619811201BE8AFF81AF5EBC8BF1 /* Pods-NetTool_Tests-resources.sh */,
+				7E1E1C8D9858198F611109FCD728CADC /* Pods-NetTool_Tests-umbrella.h */,
+				E9A8247268B4BB936DE6694DB9C5AD17 /* Pods-NetTool_Tests.debug.xcconfig */,
+				B8D9641D9E85D84487E01B1FCF85A6D4 /* Pods-NetTool_Tests.release.xcconfig */,
+			);
+			name = "Pods-NetTool_Tests";
+			path = "Target Support Files/Pods-NetTool_Tests";
+			sourceTree = "<group>";
+		};
+		F2A8634B97DEA4A0D61A63DC3AA7198F /* NetTool */ = {
+			isa = PBXGroup;
+			children = (
+				04518D2514ACC7631093B3CC98A94EFB /* Classes */,
+			);
+			name = NetTool;
+			path = NetTool;
+			sourceTree = "<group>";
+		};
+		F8B446844BA168E1BF9AC5526906ACD0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06BE67328BB1E86756F5CE38F2638021 /* Info.plist */,
+				FDFC509308C96B10B9D13F09BC7130D7 /* NetTool.modulemap */,
+				1C4464D93A1CA40CCBF3057A89742EF9 /* NetTool.xcconfig */,
+				F99F0CC465A13B8F88C680D7992418F4 /* NetTool-dummy.m */,
+				8FE7DB7E6E59D36AF676E2A6CCC0D410 /* NetTool-prefix.pch */,
+				78E846BD3F463BD5DAD29A5936E88AFA /* NetTool-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NetTool";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		052810028DD79158D0215DAB233E1C20 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CC27CB61755989428F58872153FD6CC /* Pods-NetTool_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB811A79DF0533470ED7DA423404244 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D40AF96C3384BC206FE83AACCFE524 /* EGOCache.h in Headers */,
+				0D99F35B4BC68E4090C45ED3F55AAC8B /* NetTool-umbrella.h in Headers */,
+				011E006CE52E780AB191B2DD4767C9ED /* NetworkUnit.h in Headers */,
+				93FB7CA2441B0A906AA3E2CDB87F8A33 /* Reachability.h in Headers */,
+				5553E93318C3C047D67F87DBC1591CAF /* RequestTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DFEE3A2AFF8CC322493467C4A5E9BB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014E61D99FBF61E37D22D014F9C69EBA /* Pods-NetTool_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0868248C8F8948F981CBD8B7A6595559 /* Pods-NetTool_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C069D96F7CF72402E3AF94AFD73C3DDF /* Build configuration list for PBXNativeTarget "Pods-NetTool_Tests" */;
+			buildPhases = (
+				32F3A3332FA4FE19A6F8241A445AC3B4 /* Sources */,
+				33B661EF2CE99FEDE4A45A2DD4D96FE1 /* Frameworks */,
+				052810028DD79158D0215DAB233E1C20 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NetTool_Tests";
+			productName = "Pods-NetTool_Tests";
+			productReference = E1FBBC46EF149BF5DD13A8094E1A800B /* Pods_NetTool_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3ACD47806AF09F0A597C405F6AFBCD8C /* Pods-NetTool_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F9652B1C514C7757F147F80AE9B483E /* Build configuration list for PBXNativeTarget "Pods-NetTool_Example" */;
+			buildPhases = (
+				A91B8E789A3FCFA7EDDD092CDAD8CD3D /* Sources */,
+				A2FF58FAC5072EEF22B28D2DFD8A728D /* Frameworks */,
+				3DFEE3A2AFF8CC322493467C4A5E9BB6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAA4B47FDF9C8368C0D6B7973B6F516C /* PBXTargetDependency */,
+			);
+			name = "Pods-NetTool_Example";
+			productName = "Pods-NetTool_Example";
+			productReference = 89326CFF18D8B79EAB9595684A704131 /* Pods_NetTool_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA2F209ABCFF920876FAA52455B3BB35 /* NetTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08FD53545EA19AE161AD0BE7E34B0584 /* Build configuration list for PBXNativeTarget "NetTool" */;
+			buildPhases = (
+				38E3230772699FECBFB4EFABB956088A /* Sources */,
+				198EFEBA65D1C422EE7FEF41DF589657 /* Frameworks */,
+				0BB811A79DF0533470ED7DA423404244 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetTool;
+			productName = NetTool;
+			productReference = 8403642FC3605CF0E200845322A91E67 /* NetTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CBD93CE9CC6B322D639EBB9AFBDAE4FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA2F209ABCFF920876FAA52455B3BB35 /* NetTool */,
+				3ACD47806AF09F0A597C405F6AFBCD8C /* Pods-NetTool_Example */,
+				0868248C8F8948F981CBD8B7A6595559 /* Pods-NetTool_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32F3A3332FA4FE19A6F8241A445AC3B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2276B762F66B50D72F129F4A0EE0C4C3 /* Pods-NetTool_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E3230772699FECBFB4EFABB956088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F7BD6BC50727799C97249200AC44EA /* EGOCache.m in Sources */,
+				5846E2DBDF5A441F78DB2FD40C65FB23 /* NetTool-dummy.m in Sources */,
+				FB3DC06A0FC1E583CD049324EA73DCD8 /* NetworkUnit.m in Sources */,
+				41479AD7D182B636B85DEB2F02F1365C /* Reachability.m in Sources */,
+				6D459769BC57AF1E8CDB710682D3D93D /* RequestTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91B8E789A3FCFA7EDDD092CDAD8CD3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEAC8244208D16EA9DCF9EB4064243D /* Pods-NetTool_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAA4B47FDF9C8368C0D6B7973B6F516C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NetTool;
+			target = AA2F209ABCFF920876FAA52455B3BB35 /* NetTool */;
+			targetProxy = E56EF7121B23423A8C1A7C7CB37C3155 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B3EF1F5F75BB5CC44217A620C671229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A8247268B4BB936DE6694DB9C5AD17 /* Pods-NetTool_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetTool_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetTool_Tests/Pods-NetTool_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetTool_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3955CCC5C3505D5648FB72FB4ED1ECBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4464D93A1CA40CCBF3057A89742EF9 /* NetTool.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NetTool/NetTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NetTool/NetTool.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NetTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		870E888814380A7EA9BCDCA86C1BE0F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C4464D93A1CA40CCBF3057A89742EF9 /* NetTool.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NetTool/NetTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NetTool/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NetTool/NetTool.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NetTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98A62CC848AA34F40F585AEDC47E72C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8D9641D9E85D84487E01B1FCF85A6D4 /* Pods-NetTool_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetTool_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetTool_Tests/Pods-NetTool_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetTool_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		99FE0C7A24071DE6A93F1AE21561E33E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5B86547529C09786FE7C9270EE7DC6 /* Pods-NetTool_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetTool_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetTool_Example/Pods-NetTool_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetTool_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C2B91084F3CC8E265B8317B04E7E1625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D48BE9A477905139E3E48FFB89F2F04 /* Pods-NetTool_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NetTool_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NetTool_Example/Pods-NetTool_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NetTool_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08FD53545EA19AE161AD0BE7E34B0584 /* Build configuration list for PBXNativeTarget "NetTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870E888814380A7EA9BCDCA86C1BE0F5 /* Debug */,
+				3955CCC5C3505D5648FB72FB4ED1ECBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F9652B1C514C7757F147F80AE9B483E /* Build configuration list for PBXNativeTarget "Pods-NetTool_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FE0C7A24071DE6A93F1AE21561E33E /* Debug */,
+				C2B91084F3CC8E265B8317B04E7E1625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C069D96F7CF72402E3AF94AFD73C3DDF /* Build configuration list for PBXNativeTarget "Pods-NetTool_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3EF1F5F75BB5CC44217A620C671229 /* Debug */,
+				98A62CC848AA34F40F585AEDC47E72C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

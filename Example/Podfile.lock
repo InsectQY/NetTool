@@ -1,0 +1,16 @@
+PODS:
+  - NetTool (0.1.0)
+
+DEPENDENCIES:
+  - NetTool (from `../`)
+
+EXTERNAL SOURCES:
+  NetTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NetTool: b195a9ee385a37066b3dd2dc69a4f9aa0f7624d6
+
+PODFILE CHECKSUM: f1bf8041626f6be4e245584ffedbaa0564cfd491
+
+COCOAPODS: 1.2.1.beta.1
