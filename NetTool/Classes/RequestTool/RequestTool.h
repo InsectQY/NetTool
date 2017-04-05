@@ -14,7 +14,6 @@ typedef NS_ENUM(NSInteger, requestType) {
     GET = 1,
     POST = 2,
 };
-
     
 /**
  不带进度的普通请求
