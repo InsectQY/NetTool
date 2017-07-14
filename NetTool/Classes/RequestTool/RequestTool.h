@@ -18,14 +18,14 @@ typedef NS_ENUM(NSInteger, requestType) {
 };
 
 + (void)requestCacheWithType:(requestType )type
-           requestSerializer:(AFHTTPRequestSerializer )serializer
+           requestSerializer:(AFHTTPRequestSerializer *)serializer
                          URL:(NSString *)URL
                    parameter:(NSDictionary *)parameter
              successComplete:(void(^)(id responseObject))success
              failureComplete:(void(^)(NSError *error))failure;
 
 + (void)requestWithType:(requestType )type
-      requestSerializer:(AFHTTPRequestSerializer )serializer
+      requestSerializer:(AFHTTPRequestSerializer *)serializer
                     URL:(NSString *)URL
               parameter:(NSDictionary *)parameter
         successComplete:(void(^)(id responseObject))success

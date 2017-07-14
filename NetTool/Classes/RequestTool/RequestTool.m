@@ -49,7 +49,7 @@ static AFHTTPSessionManager *_manager;
 }
 
 + (void)requestWithType:(requestType )type
-      requestSerializer:(AFHTTPRequestSerializer )serializer
+      requestSerializer:(AFHTTPRequestSerializer *)serializer
                     URL:(NSString *)URL
               parameter:(NSDictionary *)parameter
         successComplete:(void(^)(id responseObject))success
@@ -90,7 +90,7 @@ static AFHTTPSessionManager *_manager;
 }
 
 + (void)requestCacheWithType:(requestType )type
-      requestSerializer:(AFHTTPRequestSerializer )serializer
+      requestSerializer:(AFHTTPRequestSerializer *)serializer
                     URL:(NSString *)URL
               parameter:(NSDictionary *)parameter
         successComplete:(void(^)(id responseObject))success
