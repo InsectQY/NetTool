@@ -10,8 +10,6 @@
 #import "NetworkUnit.h"
 #import "EGOCache.h"
 
-#import "AFNetworking.h"
-
 @implementation RequestTool
 
 static AFHTTPSessionManager *_manager;
@@ -48,6 +46,131 @@ static AFHTTPSessionManager *_manager;
         _manager.securityPolicy.validatesDomainName = NO;
     });
     return _manager;
+}
+
++ (void)requestWithType:(requestType )type
+      requestSerializer:(AFHTTPRequestSerializer )serializer
+                    URL:(NSString *)URL
+              parameter:(NSDictionary *)parameter
+        successComplete:(void(^)(id responseObject))success
+        failureComplete:(void(^)(NSError *error))failure {
+    
+    _manager = [self sharedManager];
+    _manager.requestSerializer = serializer;
+    if ([NetworkUnit getNetworkTypeFromStatusBar]) { // 有网络
+        if (type == 1) { // GET 请求
+            
+            [_manager GET:URL parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
+                
+                !success ? : success(responseObject);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
+                
+                if (error.code == NSURLErrorCancelled)  return ;
+                NSLog(@"%@",error);
+                !failure ? : failure(error);
+            }];
+        }else if (type == 2){ // POST 请求
+            
+            [_manager POST:URL parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
+                
+                !success ? : success(responseObject);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
+                
+                if (error.code == NSURLErrorCancelled)  return ;
+                NSLog(@"%@",error);
+                !failure ? : failure(error);
+            }];
+        }else {
+            NSLog(@"未选择请求类型");
+            return;
+        }
+    }else { // 没有网络
+        return;
+    }
+}
+
++ (void)requestCacheWithType:(requestType )type
+      requestSerializer:(AFHTTPRequestSerializer )serializer
+                    URL:(NSString *)URL
+              parameter:(NSDictionary *)parameter
+        successComplete:(void(^)(id responseObject))success
+             failureComplete:(void(^)(NSError *error))failure {
+    
+    _manager = [self sharedManager];
+    _manager.requestSerializer = serializer;
+    
+    if ([NetworkUnit getNetworkTypeFromStatusBar]) { // 有网络
+        if (type == 1) { // GET 请求
+            
+            [_manager GET:URL parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
+                
+                if (responseObject) { // 缓存到本地
+                    [[EGOCache globalCache] setObject:responseObject forKey:URL];
+                }
+                else { // 从缓存中取
+                    responseObject = [[EGOCache globalCache] objectForKey:URL];
+                    if (!responseObject) { // 缓存中没有，直接返回
+                        return;
+                    }
+                }
+                
+                !success ? : success(responseObject);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
+                
+                if (error.code == NSURLErrorCancelled)  return ;
+                NSLog(@"%@",error);
+                id responseObject = [[EGOCache globalCache] objectForKey:URL];
+                if (success) {
+                    if (responseObject) { // 请求失败时，如果缓存中有数据也从缓存中取，没有则返回错误信息
+                        success(responseObject);
+                    }else {
+                        !failure ? : failure(error);
+                    }
+                }
+            }];
+            
+        }else if (type == 2) { // POST 请求
+            
+            [_manager POST:URL parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject){
+                
+                if (responseObject) { // 缓存到本地
+                    [[EGOCache globalCache] setObject:responseObject forKey:URL];
+                }
+                else { // 从缓存中取
+                    responseObject = [[EGOCache globalCache] objectForKey:URL];
+                    if (!responseObject) { // 缓存中没有，直接返回
+                        return;
+                    }
+                }
+                
+                !success ? : success(responseObject);
+            } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error){
+                
+                if (error.code == NSURLErrorCancelled)  return ;
+                NSLog(@"%@",error);
+                id responseObject = [[EGOCache globalCache] objectForKey:URL];
+                if (success) {
+                    if (responseObject) { // 请求失败时，如果缓存中有数据也从缓存中取，没有则返回错误信息
+                        success(responseObject);
+                    }else {
+                        !failure ? : failure(error);
+                    }
+                }
+            }];
+        }else {
+            NSLog(@"未选择请求类型");
+            return;
+        }
+    }else { // 没有网络从本地缓存中取
+        id responseObject = [[EGOCache globalCache] objectForKey:URL];
+        if (success) {
+            if (responseObject) { // 有本地缓存
+                success(responseObject);
+            }else { // 本地没有缓存
+                return;
+            }
+        }
+    }
 }
 
 + (void)requestWithType:(requestType)type

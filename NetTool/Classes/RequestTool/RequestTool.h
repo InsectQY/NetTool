@@ -8,12 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AFNetworking.h"
+
 @interface RequestTool : NSObject
 
 typedef NS_ENUM(NSInteger, requestType) {
     GET = 1,
     POST = 2,
 };
+
++ (void)requestCacheWithType:(requestType )type
+           requestSerializer:(AFHTTPRequestSerializer )serializer
+                         URL:(NSString *)URL
+                   parameter:(NSDictionary *)parameter
+             successComplete:(void(^)(id responseObject))success
+             failureComplete:(void(^)(NSError *error))failure;
+
++ (void)requestWithType:(requestType )type
+      requestSerializer:(AFHTTPRequestSerializer )serializer
+                    URL:(NSString *)URL
+              parameter:(NSDictionary *)parameter
+        successComplete:(void(^)(id responseObject))success
+        failureComplete:(void(^)(NSError *error))failure;
     
 /**
  不带进度的普通请求

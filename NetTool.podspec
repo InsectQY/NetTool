@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NetTool'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '网络状态判断和网络请求工具类'
 
   s.description      = <<-DESC
